@@ -4,13 +4,14 @@
         <title>contactform</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    
-    <h1><big><center>Wij willen jouw recepten!!</center></big></h1>
-    
-    <hr>
     <body>
+        <header>
+    <h1><big><center>Wij willen jouw recepten!!</center></big></h1>
+    </header>
+    <hr>
     
-        <form  name="contact" netlify>
+    <main>
+        <form  name="contact" method="POST" netlify>
         <label for="fname">Voornaam:</label><br>
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Achternaam:</label><br>
@@ -50,8 +51,9 @@
         <input type="file" id="recept" name="recept"><br><br>
         <label for="website">Dé website</label>
         <input type="url" id="website" name="website"><br><br>
-        <input type="submit">
-        <input type="reset">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
       </form>
+    </main>
     </body>
 </html>
